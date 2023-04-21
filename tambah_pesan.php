@@ -11,11 +11,11 @@
 			<form action="proses-tambah.php" method="POST" class="mt-5">
 				<div class="mb-3">
 					<label for="nama" class="form-label">Nama:</label>
-					<input type="text" class="form-control" id="nama" name="nama" placeholder="Nama lengkap">
+					<input type="text" class="form-control" id="nama" name="nama" placeholder="Nama lengkap" required>
 				</div>
 				<div class="mb-3">
 					<label for="pesan" class="form-label">Pesan:</label>
-					<textarea class="form-control" id="pesan" name="pesan"></textarea>
+					<textarea class="form-control" id="pesan" name="pesan" required></textarea>
 				</div>
 				<div>
 					<button type="submit" class="btn btn-primary" name="done">Selesai</button>
