@@ -12,6 +12,11 @@
 		<h1>Forum</h1>
 	</header>
 
+	<div class="alert <?php echo ($_GET['status'] == 'sukses' ? 'alert-success' : 'alert-danger'); ?> text-center" role="alert">
+    	<?php echo ($_GET['status'] == 'sukses' ? 'Penambahan pesan baru berhasil!' : 'Penambahan pesan baru gagal!'); ?>
+	</div>
+
+
 	<main class="container">
 		<nav class="mb-3">
 			<a href="tambah_pesan.php" class="btn btn-warning">[+] Tambah Baru</a>
