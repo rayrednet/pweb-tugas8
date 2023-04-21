@@ -12,10 +12,17 @@
 		<h1>Forum</h1>
 	</header>
 
-	<div class="alert <?php echo ($_GET['status'] == 'sukses' ? 'alert-success' : 'alert-danger'); ?> text-center" role="alert">
-    	<?php echo ($_GET['status'] == 'sukses' ? 'Penambahan pesan baru berhasil!' : 'Penambahan pesan baru gagal!'); ?>
+	<div class="alert <?php if($_GET['status'] == 'sukses') echo 'alert-success'; else if($_GET['status'] == 'gagal') echo 'alert-danger'; else echo 'd-none'; ?> text-center" role="alert">			
+		<?php
+			if($_GET['status'] == 'sukses'){
+				echo "Penambahan pesan baru berhasil!";
+			} else if($_GET['status'] == 'gagal'){
+				echo "Penambahan pesan baru gagal!";
+			} else {
+				echo "&nbsp;";
+			}
+		?>
 	</div>
-
 
 	<main class="container">
 		<nav class="mb-3">
