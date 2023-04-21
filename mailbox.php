@@ -25,9 +25,6 @@
 		?>
 	</div>
 	<div class="container">
-		<nav class="mb-3">
-			<a href="index.php" class="btn btn-warning">[-] Kembali</a>
-		</nav>
 		<table class="table">
 			<thead>
 				<tr>
