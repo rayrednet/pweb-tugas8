@@ -42,10 +42,16 @@
 						<h5 class="card-title"><?php echo $hasil['nama']; ?></h5>
 						<p class="card-text"><?php echo $hasil['pesan']; ?></p>		
 					</div>
-					<div class="card-footer text-end">
+					<?php if ($hasil['pesan_balasan']) { ?>
+						<div class="card-footer text-end">
+							<p><?php echo $hasil['pesan_balasan']; ?></p>
+							<small class="text-muted">~ Admin ~</small>
+						</div>
+					<?php } ?>
+					<!-- <div class="card-footer text-end">
 						<p><?php echo ($hasil['pesan_balasan'] ? $hasil['pesan_balasan'] : 'Belum ada balasan dari admin (pejabat)'); ?></p>
 						<small class="text-muted">~ Admin ~</small>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<?php } ?>
