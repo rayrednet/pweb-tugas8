@@ -5,6 +5,7 @@
 <head>
 	<title>Silaturahmi PWeb</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
 
 	<main class="container">
 		<nav class="mb-3">
-			<a href="tambah_pesan.php" class="btn btn-warning">[+] Tambah Baru</a>
+			<a href="tambah_pesan.php" class="btn btn-warning">[+] Buat Pesan Baru</a>
 		</nav>
 
 		<div class="row row-cols-1 row-cols-md-2 g-4">
