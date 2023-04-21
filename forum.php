@@ -31,7 +31,7 @@
 
 		<div class="row row-cols-1 row-cols-md-2 g-4">
 			<?php
-			$sql = "SELECT * FROM pesan";
+			$sql = "SELECT * FROM pesan ORDER BY nama ASC";
 			$query = mysqli_query($db, $sql);
 
 			while($hasil = mysqli_fetch_array($query)){
