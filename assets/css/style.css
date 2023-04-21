@@ -1,0 +1,96 @@
+.bg-image {
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .header-color {
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    height: 10vh;
+    padding: 0;
+    /* Reset any Bootstrap styles applied to the header element */
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: left; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+    position: relative; /* set the position to relative to position the pseudo-element */
+}
+
+.header-color::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  }
+  
+
+.header-color img {
+    width: 50px; /* adjust the width of the logo */
+    margin-right: 15px; /* add some spacing between the logo and the heading */
+  }
+
+  .logo {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url('../images/logo-header.png');
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+  
+  .logo:hover {
+    background-image: url('../images/logo-header-hover.png');
+    transform: scale(1.1);
+  }
+
+  .btn-new-message {
+    background-color: #84db33;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(255, 255, 254, 0.822); /* add the glowing green box-shadow */
+  }
+  
+  .btn-new-message:hover {
+    transform: scale(1.05);
+    background-color: rgb(38, 119, 143); 
+    color: white; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.692);
+  }
+
+  .container-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 25px;
+  }
+  
+  .bg-admin {
+    background-color: #f0ece2;
+  }
+  
+  .text-admin {
+    color: #363636;
+  }
+  
+  .card {
+    display: flex;
+   
+  }
+  
+  .card-body {
+    flex-grow: 1;
+  }
+  
