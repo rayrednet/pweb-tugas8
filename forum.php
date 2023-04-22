@@ -9,25 +9,6 @@
     
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        /* Masonry style columns */
-        .card-columns {
-            column-count: 2;
-            column-gap: 1rem;
-        }
-
-        /* Remove gap below last card */
-        .card-columns:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Override card size for small screens */
-        @media screen and (max-width: 576px) {
-            .card-columns {
-                column-count: 1;
-            }
-        }
-    </style>
 </head>
 
 <body class="bg-image">      
