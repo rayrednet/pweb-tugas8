@@ -15,7 +15,7 @@
         <h1>Contact Book</h1>
     </header>
 	<div class ="container-letter">
-		<div class="input-group mb-3">
+	<div class="input-group mb-3">
 			<div class="input-group-prepend col-md-6">
 				<img src="assets/images/2-peeps.png" class="image-size">
 			</div>

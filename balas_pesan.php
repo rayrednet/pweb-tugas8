@@ -19,18 +19,22 @@ if (mysqli_num_rows($query) < 1) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Silaturahmi PWeb</title>
+  <title>Silaturahmi Online</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <!-- Additional CSS Files -->
+	<link rel="stylesheet" href="assets/css/admin.css">
 </head>
-<body>
-  <div class="container mt-5">
-      <div class="jumbotron">
-        <h1 class="display-4 text-center">Reply Silaturahmi Masyarakat</h1>
+<body class="bg-admin">
+<header class="header-color">  
+        <a href="#" class="logo"></a>
+        <h1>Balas Pesan Silaturahmi Online</h1>
+    </header>
+
         <form action="proses-reply.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $hasil['id'] ?>" />
         <div class="form-group">
-          <label for="nama">Nama:</label>
+          <label for="nama">Pengirim:</label>
           <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $hasil['nama'] ?>" readonly>
         </div>
         <div class="form-group">

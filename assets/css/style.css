@@ -67,9 +67,8 @@
   
   .btn-new-message:hover {
     transform: scale(1.05);
-    background-color: rgb(38, 119, 143); 
     color: white; 
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.692);
+    box-shadow: 0 0 20px rgb(192, 221, 29);
   }
 
   .container-box {
