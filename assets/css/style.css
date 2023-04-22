@@ -67,9 +67,9 @@
   
   .btn-new-message:hover {
     transform: scale(1.05);
-    color: white; 
+    color: black; 
     background-color: #84db33;
-    box-shadow: 0 0 20px rgb(192, 221, 29);
+    box-shadow: #84db33;
   }
 
   .container-box {
@@ -160,9 +160,10 @@ button {
 }
 
 button:hover{
-  background: rgb(89, 133, 199);
+  background: rgb(89,199,174);
   /* background: linear-gradient(90deg, rgba(89,199,174,1) 0%, rgba(88,120,187,1) 51%, rgba(89,199,174,1) 100%); */
   color: #fff;
+  box-shadow: 0 0 5px 5px rgba(89, 199, 174, 0.5);
 }
 
 .container-letter {

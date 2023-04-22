@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Silaturahmi Online</title>
+    <title>Forum | Silaturahmi Online</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     
@@ -36,7 +36,7 @@
         <div class="container-box">
             <div class="card-columns">
                 <?php
-                $sql = "SELECT * FROM pesan ORDER BY pesan_balasan IS NULL ASC";
+                $sql = "SELECT * FROM pesan ORDER BY pesan_balasan IS NULL DESC";
                 $query = mysqli_query($db, $sql);
 
                 while ($hasil = mysqli_fetch_array($query)) {
