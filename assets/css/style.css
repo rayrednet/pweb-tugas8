@@ -197,3 +197,8 @@ button:hover{
   height: 300px; /* adjust the height as needed */
   margin-left: 50px !important;
 }
+
+.nav-main{
+    align-items: center;
+    display: flex;
+}
