@@ -22,23 +22,41 @@
             </nav>
         </div>
         <div class="modal fade" id="passModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="ModalLabel">Admin Password</h1>
-                </div>
-                <div class="modal-body">
-                    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ModalLabel">Admin Password</h1>
+                    </div>
+                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                    <div class="modal-body">
+                        <!-- Add name and required attributes to the password input field -->
+                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" name="admin_password" required>
+                        <!-- Add note to the modal body -->
                         <div id="passwordHelpBlock" class="form-text">
+                        Enter the password "adminpass" to access the admin dashboard.
                         </div>
-                    </input>
-                </div>
-                <div class="modal-footer">
-                    <input type="button" class="btn btn-danger" data-bs-dismiss="modal"></input>
-                    <a href="mailbox.php"><input type="button" class="btn btn-success"></input></a>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-danger" data-bs-dismiss="modal" value="Cancel"></input>
+                        <input type="submit" name="submit" class="btn btn-success" value="Let's Go!"></input>
+                    </div>
+                    </form>
                 </div>
             </div>
         </div>
+        <?php
+        if (isset($_POST['submit'])) {
+            if (isset($_POST['admin_password'])) {
+                $admin_password = $_POST['admin_password'];
+                if ($admin_password === 'adminpass') {
+                    header('Location: mailbox.php');
+                    exit();
+                } else {
+                    echo "<div class='alert alert-danger text-center' role='alert'>Incorrect password. Please try again, the password is 'adminpass'.</div>";
+                }
+            }
+        }
+        ?>
     </div>
     </body>
 </html>

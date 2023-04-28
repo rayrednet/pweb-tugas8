@@ -28,7 +28,7 @@ if (mysqli_num_rows($query) < 1) {
 </head>
 <body class="bg-admin">
 <header class="header-color">  
-        <a href="#" class="logo"></a>
+        <a href="index.php" class="logo"></a>
         <h1>Balas Pesan Silaturahmi Online</h1>
     </header>
 

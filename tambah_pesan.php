@@ -11,7 +11,7 @@
 </head>
 <body class="bg-image">      
     <header class="header-color">  
-        <a href="#" class="logo"></a>
+        <a href="index.php" class="logo"></a>
         <h1>Contact Book</h1>
     </header>
 	

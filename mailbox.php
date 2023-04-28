@@ -13,7 +13,7 @@
 
 <body class = "bg-admin">	
 	<header class="header-color">  
-        <a href="#" class="logo"></a>
+        <a href="index.php" class="logo"></a>
         <h1>Pesan-Pesan Masyarakat</h1>
     </header>
 
