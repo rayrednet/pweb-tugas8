@@ -36,24 +36,25 @@
         <div class="container-box">
             <div class="card-columns">
                 <?php
-                $sql = "SELECT * FROM pesan ORDER BY pesan_balasan IS NULL DESC";
-                $query = mysqli_query($db, $sql);
+                    $sql = "SELECT * FROM pesan ORDER BY pesan_balasan IS NULL DESC";
+                    $query = mysqli_query($db, $sql);
 
-                while ($hasil = mysqli_fetch_array($query)) {
-                    ?>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><?php echo $hasil['nama']; ?></h5>
-                            <p class="card-text"><?php echo $hasil['pesan']; ?></p>
-                        </div>
-                        <?php if ($hasil['pesan_balasan']) { ?>
-                            <div class="card-footer text-end bg-admin">
-                                <p class="text-admin"><?php echo $hasil['pesan_balasan']; ?></p>
-                                <small class="text-admin">~ Admin ~</small>
+                    while ($hasil = mysqli_fetch_array($query)) {
+                        ?>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $hasil['nama']; ?></h5>
+                                <p class="card-text"><?php echo $hasil['pesan']; ?></p>
                             </div>
-                        <?php } ?>
-                    </div>
-                <?php } ?>
+                            <?php if ($hasil['pesan_balasan']) { ?>
+                                <div class="card-footer text-end bg-admin">
+                                    <p class="text-admin"><?php echo $hasil['pesan_balasan']; ?></p>
+                                    <small class="text-admin">~ Admin ~</small>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    <?php } 
+                ?>
             </div>
         </div>
     </main>
